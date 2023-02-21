@@ -27,6 +27,9 @@ int main()
         for(int k=j+1;k<i;k++)
         if(sentence[k].lenght<sentence[j].lenght)
             swap(sentence[k],sentence[j]);
+        else if(sentence[k].lenght==sentence[j].lenght)
+                if(strcmp(sentence[k].word,sentence[j].word)>0)
+                    swap(sentence[k],sentence[j]);
     for(;i>0;i--)
         printf("%s\n",sentence[i].word);
     return 0;
