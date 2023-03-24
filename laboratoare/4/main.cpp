@@ -2,6 +2,9 @@
 #include "Sort.h"
 #include<ctime>
 #include <initializer_list>
+#include <cstdarg>
+#include <cstdarg>
+#include <initializer_list>
 using namespace std;
 
 int main()
@@ -17,6 +20,9 @@ int main()
     cout<<s.GetElementsCount()<<endl;
     cout<<s.GetElementFromIndex(2)<<endl;
     */
+   //pentru al doilea constructor 
+   Sort s({1,2,3,4,5});
+   s.Print();
     //pentru al treilea constructor
     /*
     int v[10],e=0;
@@ -29,6 +35,7 @@ int main()
     cout<<s.GetElementsCount()<<endl;
     cout<<s.GetElementFromIndex(3)<<endl;
     */
+
     //pentru al patrulea constructor
     /*
     Sort s(5,10,20,30,27,16);
@@ -40,7 +47,9 @@ int main()
     cout<<s.GetElementsCount()<<endl;
     cout<<s.GetElementFromIndex(3)<<endl;
     */
+
     //pentru al cincilea constructor
+    /*
     char sorting[50];
     strcpy(sorting,"10,40,100,5,70");
     Sort s(sorting);
@@ -53,5 +62,6 @@ int main()
     s.Print();
     cout<<s.GetElementsCount()<<endl;
     cout<<s.GetElementFromIndex(3)<<endl;
+    */
     return 0;
 }

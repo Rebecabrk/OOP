@@ -4,6 +4,8 @@
 #include <cstdarg>
 #include <cstring>
 #include<iostream>
+#include <cstdarg>
+#include <initializer_list>
 using namespace std;
 Sort::Sort(int number, int minimum, int maximum)
 {

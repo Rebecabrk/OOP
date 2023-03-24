@@ -1,9 +1,11 @@
+#include <cstdarg>
+#include <initializer_list>
 class Sort
 {
     int *vector, min, max, size;
 public:
     Sort(int number, int minimum, int maximum);
-    //Sort(std::initializer_list<int> list);
+    Sort(std::initializer_list<int> list);
     Sort(int *Vector, int size);
     Sort(int number, ...);
     Sort(char *string);
