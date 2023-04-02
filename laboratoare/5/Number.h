@@ -1,3 +1,4 @@
+#include <cstring>
 class Number
 {
     char* num;
@@ -6,6 +7,16 @@ public:
    Number (int x);
    Number(const char * value, int base); // where base is between 2 and 16
    ~Number();
+   Number(const Number& n) {
+       num = new char[100];
+       strcpy(num, n.num);
+       base = n.base;
+   }
+   Number (Number&& n)
+   {
+       num = n.num;
+       n.num = nullptr;
+   };
    friend Number operator+(Number a, Number b);
    friend Number operator-(Number a, Number b);
    Number operator= (Number a);

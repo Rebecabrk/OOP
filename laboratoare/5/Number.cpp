@@ -200,5 +200,6 @@ int Number::GetBase()
 }
 Number::~Number()
 {
+    if(num)
     delete[] num;
 }
