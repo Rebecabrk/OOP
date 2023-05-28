@@ -142,7 +142,6 @@ struct Map
     iterator begin() {
         return iterator(&data[0]);
     }
-
     iterator end() {
         return iterator(&data[size]);
     }
